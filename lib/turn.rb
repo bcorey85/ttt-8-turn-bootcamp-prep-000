@@ -20,7 +20,6 @@ end
     
 def move(board, index, char = "X")
       board[index] = char
-
 end
 
 def position_taken?(board, index)
@@ -38,7 +37,6 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, char = "X")
     display_board(board)
-    turn(board)
   else
       turn(board)
     end
