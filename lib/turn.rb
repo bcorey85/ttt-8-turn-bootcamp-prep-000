@@ -37,6 +37,7 @@ def get_input()
 end
 
 def turn(board)
+  get_input()
   if valid_move?(board, get_input())
     move(board, get_input(), char = "X")
     display_board(board)
