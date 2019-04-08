@@ -39,6 +39,7 @@ def turn(board)
   if move(board, index, char = "X") == true
       display_board(board)
       turn(board)
-    
+    else
+      turn(board)
 end
   
